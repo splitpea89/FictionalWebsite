@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+import csv
 
 app = Flask(__name__)
 
@@ -30,6 +31,9 @@ def confirmation():
         "phone": phone,
         "address": address,
     }
+    with open('contacts.csv', 'a') as file:
+        writer = csv.writer(file)
+        writer.writerow([name, email, phone, address])
     return render_template("confirmation.html", data=props)
 
 

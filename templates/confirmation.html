@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Confirmation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/products">Products</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+        </li>
+    </ul>
+
+    <div class="jumbotron text-center">
+        <h1>Thank You!</h1>
+        <p>Your contact has been recorded. Your Info:</p>
+    </div>
+
+    <div>
+        <ul>
+            <div>Name: {{data.name}}</div>
+            <div>Email: {{data.email}}</div>
+            <div>Phone Number: {{data.phone}}</div>
+            <div>Address: {{data.address}}</div>
+        </ul>
+    </div>
+
+
+</body>
+</html>
